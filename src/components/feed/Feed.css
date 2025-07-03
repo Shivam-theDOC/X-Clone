@@ -1,0 +1,15 @@
+.feed {
+  flex: 0.7;
+  min-width: fit-content;
+}
+
+.feed__options {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid var(--x-border);
+}
+
+.feed__postContainer {
+  display: flex;
+  border-bottom: 1px solid var(--x-border);
+}

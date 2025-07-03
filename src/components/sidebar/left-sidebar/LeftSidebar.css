@@ -1,0 +1,24 @@
+.sidebar {
+  flex: 0.3;
+  min-width: 250px;
+  border-right: 1px solid var(--x-border);
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.options > h3 {
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.options:hover {
+  background-color: var(--x-background);
+  color: var(--x-hover);
+}
+
+.options__active > h3 {
+  font-weight: 900;
+}

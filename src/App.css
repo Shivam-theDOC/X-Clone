@@ -1,0 +1,12 @@
+#root {
+  --x-background: grey;
+  --x-hover: aqua;
+  --x-border: red;
+  --x-tncColour: blue;
+}
+
+body {
+  height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+}

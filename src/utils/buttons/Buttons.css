@@ -1,0 +1,30 @@
+.signUp__button {
+  background-color: var(--x-button-primary) !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  border-radius: 50px !important;
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  -ms-border-radius: 50px !important;
+  -o-border-radius: 50px !important;
+}
+
+.signUp__button:hover {
+  background-color: var(--x-button-hover-primary) !important;
+}
+.signIn__button {
+  color: rgb(15, 20, 25) !important;
+  background-color: var(--x-button-secondary) !important;
+  border: 1px solid var(--x-border-primary) !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  border-radius: 50px !important;
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  -ms-border-radius: 50px !important;
+  -o-border-radius: 50px !important;
+}
+
+.signIn__button:hover {
+  background-color: var(--x-button-hover-secondary) !important;
+}

@@ -1,9 +1,28 @@
 import XIcon from "@mui/icons-material/X";
 
+import SignInButton from "../../utils/buttons/SignInButton";
+import SignUpButton from "../../utils/buttons/SignUpButton";
 import "./WelcomePage.css";
-import Button from "@mui/material/Button";
 
 function WelcomePage() {
+  const handleSignIn = (event) => {
+    event.preventDefault();
+    try {
+      alert("Sign-in functionality is not implemented yet.");
+    } catch (error) {
+      console.error("Error during sign-in:", error);
+    }
+  };
+
+  const handleSignUp = (event) => {
+    event.preventDefault();
+    try {
+      alert("Sign-up functionality is not implemented yet.");
+    } catch (error) {
+      console.error("Error during sign-up:", error);
+    }
+  };
+
   return (
     <div className="homeContainer">
       <div className="logo">
@@ -29,25 +48,21 @@ function WelcomePage() {
               placeholder="Password"
             />
 
-            <Button variant="outlined" className="signIn__button">
-              Sign in
-            </Button>
-
+            <SignInButton onClick={handleSignIn} />
             <p className="signIn__or">OR</p>
-
-            <Button variant="contained" className="signIn__button" >
-              Create account
-            </Button>
+            <SignUpButton onClick={handleSignUp} />
           </form>
         </div>
-        <p>
+        <p className="signIn__footer">
           By signing up, you agree to the
-          <span className="tnc">Terms of Service</span> and
-          <span>
+          <span className="tnc"> Terms of Service </span>
+          and
+          <span className="tnc">
+            {" "}
             Privacy <br />
             Policy
           </span>
-          , including <span> Cookie Use</span>
+          , including <span className="tnc"> Cookie Use.</span>
         </p>
       </div>
     </div>

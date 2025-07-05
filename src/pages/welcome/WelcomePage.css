@@ -1,6 +1,8 @@
 .homeContainer {
   display: flex;
   height: 100vh;
+  word-wrap: break-word;
+  margin: 30px 20px;
 }
 
 .logo {
@@ -8,12 +10,12 @@
   justify-content: center;
   align-items: center;
   flex: 0.6;
-  font-size: 250px;
+  font-size: 290px;
+  margin-right: 50px;
 }
 
 .signInContainer {
   flex: 0.4;
-  border-left: 1px solid red;
   min-width: fit-content;
 }
 
@@ -23,21 +25,12 @@
 
 .signIn__header > h1 {
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .signIn__header > h3 {
   font-weight: 800;
-  font-size: 1.1rem;
-}
-
-.Button {
-  font-weight: 300;
-
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  font-size: 2.1rem;
 }
 
 .signIn__form {
@@ -49,9 +42,10 @@
 
 .signIn__form > input {
   margin: 10px 0;
-  padding: 5px;
-  border: 1px solid var(--x-border);
+  padding: 10px;
+  border: 1px solid var(--x-border-primary);
   border-radius: 20px;
+
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -61,6 +55,13 @@
 .signIn__or {
   text-align: center;
   font-family: inherit;
+}
+
+.signIn__footer {
+  font-family: "Helvetica";
+  font-size: 0.8rem;
+  margin-top: 20px;
+  color: var(--x-text);
 }
 
 .tnc {

@@ -1,10 +1,15 @@
 import Button from "@mui/material/Button";
 import "./Buttons.css"; // Assuming you have a CSS file for styling
 
-const SignUpButton = () => {
+const SignUpButton = ({ text, flow }) => {
   return (
-    <Button variant="contained" className="signUp__button">
-      Create account
+    <Button
+      variant="outlined"
+      className={flow ? "signUp__buttonFlowButton" : "signUp__button"}
+    >
+      <span className="signUp__buttonText">
+        {text ? text : "Create an account"}
+      </span>
     </Button>
   );
 };

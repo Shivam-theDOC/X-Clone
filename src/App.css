@@ -4,10 +4,12 @@
   --x-border-secondary: rgb(0, 0, 0);
   --x-tncColour: rgb(29, 155, 240);
   --x-text: rgb(83, 100, 113);
+  --x-text-secondary: rgb(255, 255, 255);
   --x-button-primary: rgb(29, 155, 240);
   --x-button-hover-primary: rgb(26, 140, 216);
   --x-button-secondary: rgb(255, 255, 255);
   --x-button-hover-secondary: rgb(230, 230, 230);
+  --x-button-button-tertiary: rgb(15, 20, 25);
 }
 
 body {

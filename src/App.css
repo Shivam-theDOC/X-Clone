@@ -1,5 +1,5 @@
 #root {
-  --x-background: grey;
+  --x-background: rgb(255, 255, 255);
   --x-border-primary: rgb(207, 217, 222);
   --x-border-secondary: rgb(0, 0, 0);
   --x-tncColour: rgb(29, 155, 240);
@@ -15,5 +15,8 @@
 body {
   height: 100vh;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 0;
+}
+body::-webkit-scrollbar {
+  display: none;
 }

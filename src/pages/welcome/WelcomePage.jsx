@@ -3,21 +3,22 @@ import XIcon from "@mui/icons-material/X";
 import SignInButton from "../../utils/buttons/SignInButton";
 import SignUpButton from "../../utils/buttons/SignUpButton";
 import "./WelcomePage.css";
+import SignIn from "../signin/SignIn";
+import { useState } from "react";
 
 function WelcomePage() {
+  const [showSignIn, setShowSignIn] = useState(false);
+
   const handleSignIn = (event) => {
     event.preventDefault();
-    try {
-      alert("Sign-in functionality is not implemented yet.");
-    } catch (error) {
-      console.error("Error during sign-in:", error);
-    }
+    setShowSignIn(true);
+    console.log("Clicked Sign In button");
   };
 
   const handleSignUp = (event) => {
     event.preventDefault();
     try {
-      alert("Sign-up functionality is not implemented yet.");
+      console.log("Sign-up functionality is not implemented yet.");
     } catch (error) {
       console.error("Error during sign-up:", error);
     }
@@ -49,7 +50,15 @@ function WelcomePage() {
             />
 
             <SignInButton onClick={handleSignIn} />
-            <p className="signIn__or">OR</p>
+            <div className="signIn__orContainer">
+              <div className="signIn__orLineContainer">
+                <div className="signIn__orLine"></div>
+              </div>
+              <div className="signIn__orText">OR</div>
+              <div className="signIn__orLineContainer">
+                <div className="signIn__orLine"></div>
+              </div>
+            </div>
             <SignUpButton onClick={handleSignUp} />
           </form>
         </div>
@@ -65,6 +74,15 @@ function WelcomePage() {
           , including <span className="tnc"> Cookie Use.</span>
         </p>
       </div>
+
+      {showSignIn && (
+        <SignIn
+          handleClose={() => {
+            setShowSignIn(false);
+            console.log("Sign In modal closed");
+          }}
+        />
+      )}
     </div>
   );
 }

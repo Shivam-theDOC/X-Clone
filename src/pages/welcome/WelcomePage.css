@@ -1,7 +1,6 @@
 .homeContainer {
   display: flex;
   height: 100vh;
-  word-wrap: break-word;
   margin: 30px 20px;
 }
 
@@ -42,19 +41,39 @@
 
 .signIn__form > input {
   margin: 10px 0;
-  padding: 10px;
+
   border: 1px solid var(--x-border-primary);
   border-radius: 20px;
-
+  height: 40px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
 
-.signIn__or {
+.signIn__orContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.signIn__orText {
   text-align: center;
   font-family: inherit;
+}
+
+.signIn__orLineContainer {
+  flex: 1;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.signIn__orLine {
+  border-bottom: 1px solid var(--x-border-primary);
+  width: 95%;
+  height: 0px;
 }
 
 .signIn__footer {

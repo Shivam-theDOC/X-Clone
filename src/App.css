@@ -1,5 +1,7 @@
 #root {
   --x-background: rgb(255, 255, 255);
+  --x-scrollbar: rgb(185, 202, 211);
+  --x-scrollbar-hover: rgb(135, 146, 153);
   --x-border-primary: rgb(207, 217, 222);
   --x-border-secondary: rgb(0, 0, 0);
   --x-tncColour: rgb(29, 155, 240);
@@ -9,7 +11,8 @@
   --x-button-hover-primary: rgb(26, 140, 216);
   --x-button-secondary: rgb(255, 255, 255);
   --x-button-hover-secondary: rgb(230, 230, 230);
-  --x-button-button-tertiary: rgb(15, 20, 25);
+  --x-button-tertiary: rgb(15, 20, 25);
+  --x-button-hover-tertiary: rgba(15, 20, 25, 0.9);
 }
 
 body {

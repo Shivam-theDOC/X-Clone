@@ -1,6 +1,12 @@
 .signUp__button {
   background-color: var(--x-button-primary) !important;
   border-radius: 50px !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  min-height: fit-content !important;
+  height: 40px !important;
+  text-wrap: nowrap !important;
+  margin: 10px 0 !important;
   -webkit-border-radius: 50px !important;
   -moz-border-radius: 50px !important;
   -ms-border-radius: 50px !important;
@@ -14,6 +20,12 @@
   background-color: var(--x-button-secondary) !important;
   border: 1px solid var(--x-border-primary) !important;
   border-radius: 50px !important;
+  margin: 10px 0 !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  min-height: fit-content !important;
+  height: 40px !important;
+  text-wrap: nowrap !important;
   -webkit-border-radius: 50px !important;
   -moz-border-radius: 50px !important;
   -ms-border-radius: 50px !important;
@@ -28,8 +40,9 @@
   color: rgb(15, 20, 25) !important;
   font-family: "Helvetica" !important;
   text-transform: none !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   font-size: 1rem !important;
+  min-width: fit-content !important;
 }
 
 .signUp__buttonText {
@@ -41,10 +54,13 @@
 }
 
 .signUp__buttonFlowButton {
-  background-color: var(--x-button-button-tertiary) !important;
+  background-color: var(--x-button-tertiary) !important;
   border-radius: 50px !important;
-  -webkit-border-radius: 50px !important;
-  -moz-border-radius: 50px !important;
-  -ms-border-radius: 50px !important;
-  -o-border-radius: 50px !important;
+  width: 100% !important;
+  min-width: fit-content !important;
+  margin: 12px 0 !important;
+}
+
+.signUp__buttonFlowButton:hover {
+  background-color: var(--x-button-hover-tertiary) !important;
 }

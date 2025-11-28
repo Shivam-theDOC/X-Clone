@@ -1,0 +1,17 @@
+import "./InputBox.css";
+
+const userCredInput = ({ placeholder }) => {
+  return (
+    <div className="signIn__inputCredentialContainer">
+      <div className="signIn__labelContainer">
+        <label htmlFor="credentials">{placeholder}</label>
+
+        <div className="signIn__inputContainer">
+          <input type="text" id="credentials" name="credentials" required />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default userCredInput;

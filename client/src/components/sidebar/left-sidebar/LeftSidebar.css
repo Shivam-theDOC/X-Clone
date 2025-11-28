@@ -1,0 +1,159 @@
+.sidebar {
+  flex: 0.3;
+  min-width: 250px;
+  max-width: 275px;
+  border-right: 1px solid var(--x-border);
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+/* Logo */
+.sidebar__logo {
+  padding: 12px;
+  margin-bottom: 4px;
+}
+
+.sidebar__xImage {
+  font-size: 30px !important;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.sidebar__xImage:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+/* Navigation Options */
+.sidebar__options {
+  flex: 1;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.options:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.options__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options__icon > svg {
+  font-size: 26px;
+}
+
+.options > h3 {
+  padding: 0 16px 0 20px;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.options__active > h3 {
+  font-weight: 700;
+}
+
+/* Notification Badge */
+.options__badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: #1d9bf0;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* Post Button */
+.sidebar__postButton {
+  margin: 16px 0;
+}
+
+.sidebar__postButton button {
+  background-color: #1d9bf0 !important;
+  color: white !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  border-radius: 9999px !important;
+  padding: 16px 0 !important;
+  font-size: 17px !important;
+  box-shadow: none !important;
+}
+
+.sidebar__postButton button:hover {
+  background-color: #1a8cd8 !important;
+}
+
+/* User Profile */
+.sidebar__profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 16px;
+}
+
+.sidebar__profile:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.sidebar__profileInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.sidebar__profileText {
+  flex: 1;
+  min-width: 0;
+}
+
+.sidebar__profileText h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar__profileText p {
+  margin: 0;
+  font-size: 15px;
+  color: #536471;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar__profileMore {
+  font-size: 18px !important;
+  color: #0f1419;
+}

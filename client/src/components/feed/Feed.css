@@ -1,0 +1,161 @@
+:root {
+  --x-color: #1d9bf0;
+  --x-border: #eff3f4;
+  --x-background: white;
+}
+
+.feed {
+  flex: 0.6;
+  border-right: 1px solid var(--x-border);
+  min-width: fit-content;
+  max-width: 600px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+/* Header with Tabs */
+.feed__header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  z-index: 100;
+  border-bottom: 1px solid var(--x-border);
+}
+
+.feed__tabs {
+  display: flex;
+  height: 53px;
+}
+
+.feed__tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s;
+  font-weight: 500;
+  font-size: 15px;
+  color: #536471;
+}
+
+.feed__tab:hover {
+  background-color: rgba(15, 20, 25, 0.03);
+}
+
+.feed__tab--active {
+  font-weight: 700;
+  color: #0f1419;
+}
+
+.feed__tabIndicator {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 56px;
+  background-color: var(--x-color);
+  border-radius: 9999px;
+}
+
+/* Tweet Box */
+.feed__tweetBox {
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--x-border);
+  padding-right: 10px;
+}
+
+.feed__tweetBox>form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed__input {
+  display: flex;
+  padding: 20px;
+  gap: 12px;
+}
+
+.feed__input>input {
+  flex: 1;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+.feed__input>input::placeholder {
+  color: #536471;
+}
+
+.feed__inputOptions {
+  display: flex;
+  margin-left: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px 12px 0;
+  border-top: 1px solid var(--x-border);
+  padding-top: 12px;
+  margin-top: 8px;
+}
+
+.feed__inputIcons {
+  display: flex;
+  gap: 4px;
+  color: var(--x-color);
+}
+
+.feed__icon {
+  font-size: 20px !important;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.feed__icon:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+.feed__postButton {
+  background-color: var(--x-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  border-radius: 9999px !important;
+  height: 36px !important;
+  padding: 0 16px !important;
+  font-size: 15px !important;
+  box-shadow: none !important;
+  min-width: 66px !important;
+}
+
+.feed__postButton:hover {
+  background-color: #1a8cd8 !important;
+}
+
+.feed__postButton:disabled {
+  background-color: #1d9bf0 !important;
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+
+/* Loading, Error, Empty States */
+.feed__loading,
+.feed__error,
+.feed__empty {
+  padding: 32px;
+  text-align: center;
+  color: #536471;
+  font-size: 15px;
+}
+
+.feed__error {
+  color: #f4212e;
+}

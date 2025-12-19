@@ -1,0 +1,153 @@
+.rightSidebarContainer {
+  flex: 0.3;
+  min-width: 290px;
+  max-width: 350px;
+  padding: 0 16px;
+  margin-left: 30px;
+}
+
+/* Search Box */
+.rightSidebar__search {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 4px 0 12px 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  background-color: #eff3f4;
+  border-radius: 9999px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.rightSidebar__searchIcon {
+  color: #536471;
+  font-size: 20px !important;
+  margin-right: 12px;
+}
+
+.rightSidebar__search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 15px;
+  flex: 1;
+}
+
+.rightSidebar__search input::placeholder {
+  color: #536471;
+}
+
+/* Section Styling */
+.rightSidebar__section {
+  background-color: #f7f9f9;
+  border-radius: 16px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.rightSidebar__section h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 8px 0 12px 0;
+}
+
+.rightSidebar__section p {
+  font-size: 15px;
+  color: #0f1419;
+  margin: 0 0 12px 0;
+  line-height: 20px;
+}
+
+/* Section Header with Close Button */
+.rightSidebar__sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightSidebar__closeIcon {
+  font-size: 20px !important;
+  color: #536471;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.rightSidebar__closeIcon:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+/* Subscribe Button */
+.rightSidebar__subscribeBtn {
+  background-color: #1d9bf0 !important;
+  color: white !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  border-radius: 9999px !important;
+  padding: 8px 16px !important;
+  font-size: 15px !important;
+  box-shadow: none !important;
+}
+
+.rightSidebar__subscribeBtn:hover {
+  background-color: #1a8cd8 !important;
+}
+
+/* News Items */
+.rightSidebar__newsItems {
+  margin-top: 12px;
+}
+
+.rightSidebar__newsItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 0 -12px;
+}
+
+.rightSidebar__newsItem:hover {
+  background-color: rgba(15, 20, 25, 0.03);
+}
+
+.rightSidebar__newsContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.rightSidebar__newsCategory {
+  font-size: 13px;
+  color: #536471;
+  margin-bottom: 2px;
+}
+
+.rightSidebar__newsHeadline {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f1419;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+
+.rightSidebar__newsAvatars {
+  display: flex;
+  gap: 4px;
+  margin-left: 12px;
+  flex-shrink: 0;
+}
+
+.rightSidebar__newsAvatar {
+  border: 2px solid white;
+}
+
+/* What's Happening */
+.rightSidebar__whatshappening {
+  min-height: 100px;
+}
